@@ -1,0 +1,4 @@
+A simple tic-tac-toe game, written in javascript with canvas.
+
+To play, simply load tictactoe.html in a browser. To see a running
+example, try http://on-a-horse.org/tictactoe/tictactoe.html
