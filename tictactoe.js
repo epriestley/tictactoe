@@ -2,7 +2,7 @@ var canvas = document.getElementById("board");
 var ctxt = canvas.getContext("2d");
 var gridPadding = 50;
 var squareSize = 100;
-var boardSize = 4;
+var boardSize = 3;
 var drawWidth = gridPadding*2 + boardSize*squareSize;
 var drawHeight = gridPadding*2 + boardSize*squareSize;
 canvas.width = drawWidth;
@@ -25,7 +25,7 @@ letterX.onload = activateAfterLoad;
 
 function activateAfterLoad() {
     if(letterO.complete && letterX.complete) {
-        updateBoardState([0, 1, 2, 3]);
+        updateBoardState([]);
     }
 }
 
