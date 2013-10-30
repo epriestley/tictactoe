@@ -82,11 +82,11 @@ function checkWinner(moves) {
     function diagLeft() {
         var row = [];
         for(var ii = 0; ii < boardSize; ii++) {
-            row.push(boardSize - ii + boardSize*ii);
+            row.push((boardSize - 1) - ii + boardSize*ii);
         }
         return row;
     }
-    
+
     function checkPlayer(moves) {
         for(var ii = 0; ii < boardSize; ii++) {
             if(checkRow(xrow(ii), moves)) return true;
@@ -96,7 +96,7 @@ function checkWinner(moves) {
     }
     if(checkPlayer(moves.filter(function(x,ii) { return ii % 2 == 0; }))) {
         return 1;
-    } 
+    }
     if(checkPlayer(moves.filter(function(x,ii) { return ii % 2 == 1; }))) {
         return 2;
     }
